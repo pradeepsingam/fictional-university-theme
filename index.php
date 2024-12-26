@@ -10,11 +10,12 @@ greet("prad", "orange")
 <h2><?php bloginfo('description')?> </h2>
 
 <?php
-  $count = 1;
+ $names = array('John','Wick', 'Hulk', 'Spider');
 
-  while($count<11) {
-    echo "<li> $count </li>";
+ $count = 0;
+
+ while($count<count($names)) {
+    echo "<li> $names[$count]";
     $count++;
-  }
-
+ }
 ?>

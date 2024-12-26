@@ -15,4 +15,17 @@
   }
 
 ?>
+
+Example 2
+
+<?php
+ $names = array('John','Wick', 'Hulk', 'Spider');
+
+ $count = 0;
+
+ while($count<count($names)) {
+    echo "<li> $names[$count]";
+    $count++;
+ }
+?>
 ```
