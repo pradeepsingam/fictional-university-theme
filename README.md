@@ -60,7 +60,7 @@ while(have_posts()){
 }
 ```
 
-## create header.php & footer.php then inside the page.php & singple.php call these
+### create header.php & footer.php then inside the page.php & singple.php call these
 single.php or page.php
 ```
 <?php get_header();?>
