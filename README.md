@@ -29,3 +29,23 @@ Example 2
  }
 ?>
 ```
+
+To loop the posts 
+```
+<?php
+while(have_posts()){
+    the_post(); ?>
+    <h2> <a href="<?php the_permalink();?>"> <?php the_title(); ?> </a></h2>
+    
+    <hr>
+<?php
+}
+```
+
+create single.php and show the posts 
+```
+   <h1> <?php the_title();?> </h1>
+   <p> <?php the_content();?> </p>
+
+   <p> <a href="http://fictional-university.local/">Back </a> </p>
+```
