@@ -3,3 +3,7 @@ Theme Name: Fictional University
 Author: Prad
 Version: 1.0
 */
+
+* {
+    background-color: bisque;
+}

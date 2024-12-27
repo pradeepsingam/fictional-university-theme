@@ -72,3 +72,23 @@ single.php or page.php
 
 <?php get_footer(); ?>
 ```
+
+### load stylesheet and other scripts
+using functions 
+```
+functions.php
+<?php
+
+function university_files(){
+    wp_enqueue_style('university_main_styles',get_stylesheet_uri());
+}
+
+
+add_action('wp_enqueue_scripts', 'university_files')
+?>
+```
+call this in the header.php using 
+```
+wp_head();
+```
+insde the header
