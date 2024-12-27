@@ -1,4 +1,6 @@
 <?php
+get_header();
+
 function greet($name, $color) {
     echo "Hello $name, is your fav color $color?";
 }
@@ -30,4 +32,6 @@ while(have_posts()){
     <hr>
 <?php
 }
+
+get_footer();
 ?>

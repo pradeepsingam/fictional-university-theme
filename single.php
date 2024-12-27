@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php the_title();?></title>
-</head>
-<body>
+<?php get_header();?>
+
    <h1> <?php the_title();?> </h1>
    <p> <?php the_content();?> </p>
 
    <p> <a href="http://fictional-university.local/">Back </a> </p>
-</body>
-</html>
+
+<?php get_footer(); ?>
