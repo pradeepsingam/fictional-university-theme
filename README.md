@@ -30,7 +30,7 @@ Example 2
 ?>
 ```
 
-To loop the posts 
+##To loop the posts 
 ```
 <?php
 while(have_posts()){
@@ -42,10 +42,20 @@ while(have_posts()){
 }
 ```
 
-create single.php and show the posts 
+##create single.php and show the posts 
 ```
    <h1> <?php the_title();?> </h1>
    <p> <?php the_content();?> </p>
 
    <p> <a href="http://fictional-university.local/">Back </a> </p>
+```
+
+##Create page.php 
+```
+<?php 
+while(have_posts()){
+    echo '<h1> Hello </h1>';
+    the_post();
+    the_title();
+}
 ```
